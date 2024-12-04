@@ -11,6 +11,6 @@ class OutputState(TypedDict):
 
 
 class GraphConfig(TypedDict):
-    gather_model: Literal['openai', 'anthropic']
-    draft_model: Literal['openai', 'anthropic']
-    critique_model: Literal['openai', 'anthropic']
+    gather_model: Literal['openai', 'openai-mini', 'anthropic']
+    draft_model: Literal['openai', 'openai-mini', 'anthropic']
+    critique_model: Literal['openai', 'openai-mini', 'anthropic']

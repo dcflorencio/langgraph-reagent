@@ -26,7 +26,7 @@ def gather_requirements(state: AgentState, config):
     messages = [
        {"role": "system", "content": gather_prompt}
    ] + state['messages']
-    model = _get_model(config, "openai", "gather_model").bind_tools([Build])
+    model = _get_model(config, "openai-mini", "gather_model").bind_tools([Build])
     response = model.invoke(messages)
     if len(response.tool_calls) == 0:
         return {"messages": [response]}
