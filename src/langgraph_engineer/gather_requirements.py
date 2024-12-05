@@ -3,19 +3,24 @@ from langgraph_engineer.state import AgentState
 from typing import TypedDict
 from langchain_core.messages import RemoveMessage
 
-gather_prompt = """You are tasked with helping build LangGraph applications. \
-LangGraph is a framework for developing LLM applications. \
-It represents agents as graphs. These graphs can contain cycles and often contain branching logic.
+gather_prompt = """
+You are a professional assistant tasked with gathering requirements to generate customized real estate reports. 
+Your job is to ask the user relevant questions to collect all necessary details, including:
 
-Your first job is to gather all the user requirements about the topology of the graph. \
-You should have a clear sense of all the nodes of the graph/agent, and all the edges. 
+- Whether they are looking to buy or rent.
+- If they are interested in a house, apartment, or other type of property.
+- The number of bedrooms and bathrooms they need.
+- Their preferred locations, city or neighborhoods
+- The desired square footage or size of the property.
+- Their budget or price range.
 
-You are conversing with a user. Ask as many follow up questions as necessary - but only ask ONE question at a time. \
-Only gather information about the topology of the graph, not about the components (prompts, LLMs, vector DBs). \
-If you have a good idea of what they are trying to build, call the `Build` tool with a detailed description.
+Ask one question at a time, and only ask for clarification if the user’s input is unclear or incomplete. 
+Avoid asking unnecessary questions or gathering information unrelated to the real estate report. 
+Once you have enough details, summarize the collected requirements and confirm readiness to proceed with generating the report.
 
-Do not ask unnecessary questions! Do not ask them to confirm your understanding or the structure! The user will be able to \
-correct you even after you call the Build tool, so just do enough to get an MVP."""
+Do not ask unnecessary questions! Do not ask them to confirm your understanding or the structure! The user will be able to 
+correct you after.
+"""
 
 
 class Build(TypedDict):

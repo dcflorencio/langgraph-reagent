@@ -41,7 +41,7 @@ def critique(state: AgentState, config):
                    {"role": "assistant", "content": state.get('requirements')},
 
                ] + _swap_messages(state['messages'])
-    model = _get_model(config, "openai", "critique_model").with_structured_output(Accept)
+    model = _get_model(config, "openai-mini", "critique_model").with_structured_output(Accept)
     response = model.invoke(messages)
     accepted = response.accept
     if accepted:
