@@ -8,7 +8,7 @@ from langgraph.prebuilt import ToolNode
 
 from langgraph_engineer.check import check
 from langgraph_engineer.critique import critique
-from langgraph_engineer.draft import draft_answer, fetch_zillow_data
+from langgraph_engineer.draft import api_call_builder, fetch_zillow_data
 from langgraph_engineer.gather_requirements import gather_requirements
 from langgraph_engineer.state import AgentState, OutputState, GraphConfig
 from langgraph_engineer.report_writer import report_writer
@@ -27,16 +27,16 @@ def route_check(state: AgentState) -> Literal["critique", "draft_answer"]:
         return "draft_answer"
 
 
-def route_start(state: AgentState) -> Literal["draft_answer", "gather_requirements"]:
+def route_start(state: AgentState) -> Literal["api_call_builder", "gather_requirements"]:
     if state.get('requirements'):
-        return "draft_answer"
+        return "api_call_builder"
     else:
         return "gather_requirements"
 
 
-def route_gather(state: AgentState) -> Literal["draft_answer", END]:
+def route_gather(state: AgentState) -> Literal["api_call_builder", END]:
     if state.get('requirements'):
-        return "draft_answer"
+        return "api_call_builder"
     else:
         return END
 
@@ -44,7 +44,7 @@ def route_gather(state: AgentState) -> Literal["draft_answer", END]:
 # Define a new graph
 workflow = StateGraph(AgentState, input=MessagesState, output=OutputState, config_schema=GraphConfig)
 workflow.add_node(gather_requirements)
-workflow.add_node(draft_answer)
+workflow.add_node(api_call_builder)
 workflow.add_node(report_writer)
 
 workflow.add_node("writer", ToolNode([fetch_zillow_data]))
@@ -55,7 +55,7 @@ workflow.add_conditional_edges("gather_requirements", route_gather)
 # workflow.add_edge("draft_answer", "check")
 # workflow.add_conditional_edges("check", route_check)
 # workflow.add_conditional_edges("critique", route_critique)
-workflow.add_edge("draft_answer", "writer")
+workflow.add_edge("api_call_builder", "writer")
 workflow.add_edge("writer", "report_writer")
 workflow.add_edge("report_writer", END)
 graph = workflow.compile()

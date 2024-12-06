@@ -123,7 +123,7 @@ class Build(TypedDict):
     data: str
 
 
-def draft_answer(state: AgentState, config):
+def api_call_builder(state: AgentState, config):
     messages = [
        {"role": "system", "content": prompt}, 
        {"role": "user", "content": state.get('requirements')}
