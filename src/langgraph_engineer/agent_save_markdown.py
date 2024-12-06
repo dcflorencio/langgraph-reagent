@@ -12,6 +12,7 @@ from langgraph_engineer.writer import api_call_builder, fetch_zillow_data
 from langgraph_engineer.gather_requirements import gather_requirements
 from langgraph_engineer.state import AgentState, OutputState, GraphConfig
 from langgraph_engineer.report_writer import report_writer
+from langgraph_engineer.report_saver import report_saver
 
 
 def route_critique(state: AgentState) -> Literal["draft_answer", END]:
@@ -46,6 +47,7 @@ workflow = StateGraph(AgentState, input=MessagesState, output=OutputState, confi
 workflow.add_node(gather_requirements)
 workflow.add_node(api_call_builder)
 workflow.add_node(report_writer)
+workflow.add_node(report_saver)
 
 workflow.add_node("writer", ToolNode([fetch_zillow_data]))
 # workflow.add_node(critique)
@@ -57,5 +59,7 @@ workflow.add_conditional_edges("gather_requirements", route_gather)
 # workflow.add_conditional_edges("critique", route_critique)
 workflow.add_edge("api_call_builder", "writer")
 workflow.add_edge("writer", "report_writer")
+workflow.add_edge("report_writer", "report_saver")
+workflow.add_edge("report_saver", END)
 workflow.add_edge("report_writer", END)
 graph = workflow.compile()

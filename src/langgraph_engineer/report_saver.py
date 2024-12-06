@@ -2,21 +2,33 @@ from langgraph_engineer.model import _get_model
 from langgraph_engineer.state import AgentState
 from typing import TypedDict
 from langchain_core.messages import RemoveMessage
+import os
 
-writer_prompt = """
-Write a detailed report on the properties. make it in markdown format
-"""
-
-
-class Build_write(TypedDict):
-    report: str
+# saver_prompt = """
+# Save the markdown report locally. display the path you save it to.
+# """
 
 
-def report_writer(state: AgentState, config):
-    messages = [
-       {"role": "system", "content": writer_prompt}
-   ] + state['messages']
-    model = _get_model(config, "openai-mini", "report_writer").bind_tools([Build_write])
-    response = model.invoke(messages)
+# class Build_write(TypedDict):
+#     report: str
 
-    return {"messages": [response]}
+
+# def report_saver(state: AgentState, config):
+#     messages = [
+#        {"role": "system", "content": saver_prompt}
+#    ] + state['report']
+#     model = _get_model(config, "openai-mini", "report_saver").bind_tools([Build_write])
+#     response = model.invoke(messages)
+
+#     return {"messages": [response]}
+
+def report_saver(state: AgentState, config):
+    messages =  state['report'][0]
+
+    file_name = "RE_report.md"
+    
+    # Save the file in the current path
+    file_path = os.path.join(os.getcwd(), file_name)
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(messages)
+    

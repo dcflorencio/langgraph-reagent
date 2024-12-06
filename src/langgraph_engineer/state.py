@@ -16,3 +16,4 @@ class GraphConfig(TypedDict):
     api_call_builder: Literal['openai', 'openai-mini', 'anthropic']
     writer: Literal['openai', 'openai-mini', 'anthropic']
     report_writer: Literal['openai', 'openai-mini', 'anthropic']
+    report_saver: Literal['openai', 'openai-mini', 'anthropic']
