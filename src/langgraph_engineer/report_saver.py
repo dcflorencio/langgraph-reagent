@@ -19,6 +19,4 @@ def report_writer(state: AgentState, config):
     model = _get_model(config, "openai-mini", "report_writer").bind_tools([Build_write])
     response = model.invoke(messages)
 
-    report = response.tool_calls[0]['args']['report']
-
-    return {"report": [report]}
+    return {"messages": [response]}

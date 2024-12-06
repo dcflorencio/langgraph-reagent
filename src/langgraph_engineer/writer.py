@@ -128,7 +128,7 @@ def api_call_builder(state: AgentState, config):
        {"role": "system", "content": prompt}, 
        {"role": "user", "content": state.get('requirements')}
    ] + state['messages']
-    model = _get_model(config, "openai-mini", "gather_model").bind_tools([fetch_zillow_data])
+    model = _get_model(config, "openai-mini", "api_call_builder").bind_tools([fetch_zillow_data])
     response = model.invoke(messages)
     if len(response.tool_calls) == 0:
         return {"messages": [response]}

@@ -5,7 +5,8 @@
     "."
   ],
   "graphs": {
-    "engineer": "./src/langgraph_engineer/agent.py:graph"
+    "RE Agent": "./src/langgraph_engineer/agent.py:graph",
+    "RE Agent - Save Md": "./src/langgraph_engineer/agent_save_markdown.py:graph"
   },
   "env": [
     "ANTHROPIC_API_KEY",

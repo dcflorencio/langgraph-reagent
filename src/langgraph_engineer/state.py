@@ -4,6 +4,7 @@ class AgentState(MessagesState):
     requirements: str
     code: str
     accepted: bool
+    report: str
 
 
 class OutputState(TypedDict):
@@ -12,5 +13,6 @@ class OutputState(TypedDict):
 
 class GraphConfig(TypedDict):
     gather_model: Literal['openai', 'openai-mini', 'anthropic']
-    draft_model: Literal['openai', 'openai-mini', 'anthropic']
-    critique_model: Literal['openai', 'openai-mini', 'anthropic']
+    api_call_builder: Literal['openai', 'openai-mini', 'anthropic']
+    writer: Literal['openai', 'openai-mini', 'anthropic']
+    report_writer: Literal['openai', 'openai-mini', 'anthropic']
