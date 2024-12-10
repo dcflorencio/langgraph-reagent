@@ -1,101 +1,91 @@
-# San Francisco Rental Properties Report
+# Rental Properties in Redmond, WA
 
-## Overview
-This report provides an overview of rental properties available in San Francisco, focusing on apartments with a minimum of 2 bedrooms and a maximum rent of $3000. The data includes various properties currently listed for rent, their prices, and other relevant details.
+This report provides an overview of available rental properties in Redmond, Washington, specifically focusing on two-bedroom apartments. The data includes various properties with their respective details such as price, address, and amenities.
 
-## Properties Summary
+## Summary of Properties
 
-### 1. 1190 Mission at Trinity Place
-- **Address:** 1190 Mission St, San Francisco, CA
-- **Price:** $2,874+
+### 1. The Onyx
+- **Address:** 4850 156th Ave NE, Redmond, WA
+- **Price:** $2,161+
 - **Bedrooms:** 2
-- **Bathrooms:** Not specified
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/8e5f276f8c442bff35da5d46d96648cc-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/apartments/san-francisco-ca/1190-mission-at-trinity-place/5XjVtb/)
+- **Image:** ![The Onyx](https://photos.zillowstatic.com/fp/0b0248e45a1861fe91deaafb590993b0-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/the-onyx/5XjW9h/)
 
-### 2. 618 Bush St APT 2
-- **Address:** 618 Bush St, San Francisco, CA 94108
-- **Price:** $2,895
+### 2. The Trails of Redmond
+- **Address:** 16539 NE 35th Ct, Redmond, WA
+- **Price:** $2,034+
 - **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Living Area:** 841 sq ft
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/c3703a6cfeb52001cb808002bd60e3c7-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/apartments/san-francisco-ca/618-bush-st/5j4BVV/)
+- **Image:** ![The Trails of Redmond](https://photos.zillowstatic.com/fp/9231e1fe00e43eab60800e919346e229-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/the-trails-of-redmond/5XkHMD/)
 
-### 3. 825 Post St
-- **Address:** 825 Post St, San Francisco, CA 94109
-- **Price:** $2,850
-- **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Living Area:** 652 sq ft
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/d0edd6c3ea102d5c223d26707ddb171f-p_e.jpg)
-- **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/apartments/san-francisco-ca/825-post-st./5XjSHY/)
-
-### 4. 725 Grove St #1
-- **Address:** 725 Grove St #1, San Francisco, CA 94102
-- **Price:** $2,995
-- **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/c0c47ff237a13899ecf1fc710cedbd57-p_e.jpg)
-- **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/homedetails/725-Grove-St-1-San-Francisco-CA-94102/2080426659_zpid/)
-
-### 5. 724 35th Ave #2
-- **Address:** 724 35th Ave #2, San Francisco, CA 94121
-- **Price:** $2,800
-- **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Living Area:** 1000 sq ft
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/d246a209a4b23164d8aae181466c4320-p_e.jpg)
-- **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/homedetails/724-35th-Ave-2-San-Francisco-CA-94121/2066816265_zpid/)
-
-### 6. 725 Leavenworth St APT 2
-- **Address:** 725 Leavenworth St APT 2, San Francisco, CA 94109
-- **Price:** $2,995
+### 3. 9016 Woodinville Redmond Rd
+- **Address:** 9016 Woodinville Redmond Rd, Redmond, WA 98052
+- **Price:** $2,795
 - **Bedrooms:** 2
 - **Bathrooms:** 2
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/a10813befefc6d2972ae85c1fd1d12b0-p_e.jpg)
+- **Living Area:** 1005 sqft
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/homedetails/725-Leavenworth-St-APT-2-San-Francisco-CA-94109/443105237_zpid/)
+- **Image:** ![9016 Woodinville Redmond Rd](https://photos.zillowstatic.com/fp/800afa54def849b9cc284dc55ef6d539-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/homedetails/9016-Woodinville-Redmond-Rd-Redmond-WA-98052/2087921693_zpid/)
 
-### 7. 823A Vallejo St
-- **Address:** 823A Vallejo St, San Francisco, CA 94133
-- **Price:** $2,700
+### 4. The Colony at Bear Creek
+- **Address:** 9301 Avondale Rd NE, Redmond, WA
+- **Price:** $2,299+
 - **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Living Area:** 900 sq ft
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/c1b23d09dc81b1c444e8588970a3f049-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/homedetails/823A-Vallejo-St-San-Francisco-CA-94133/2064252340_zpid/)
+- **Image:** ![The Colony at Bear Creek](https://photos.zillowstatic.com/fp/8c852b4ca4e4c4a4ebad0d3cdd181ffb-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/the-colony-at-bear-creek/5jDxv7/)
 
-### 8. 2400 17th Ave
-- **Address:** 2400 17th Ave, San Francisco, CA
-- **Price:** $2,600+
+### 5. Parkside Esterra Park
+- **Address:** 15551 NE Turing St, Redmond, WA
+- **Price:** $2,919+
 - **Bedrooms:** 2
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/b8d6c70ede095ac721962e8bd5c42684-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/b/building/37.742905,-122.47336_ll/)
+- **Image:** ![Parkside Esterra Park](https://photos.zillowstatic.com/fp/dd726b37b24aee34629df0eb334eb9b8-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/parkside-esterra-park/BP5zP2/)
 
-### 9. Hunters Point Block 52 and 54
-- **Address:** 151 Friedell St, San Francisco, CA
-- **Price:** $860+
+### 6. Blackbird
+- **Address:** 7601 159th Pl NE, Redmond, WA
+- **Price:** $3,055+
 - **Bedrooms:** 2
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/3d7333cbe500bfa69ca61c45af53f563-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/b/hunters-point-block-52-and-54-san-francisco-ca-BryqWD/)
+- **Image:** ![Blackbird](https://photos.zillowstatic.com/fp/038f6cacf6ce56f1c7b6da68c5df0aab-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/blackbird/BLbDkS/)
 
-### 10. Presidio Washington Apartments
-- **Address:** 3299 Washington St, San Francisco, CA 94115
-- **Price:** $3,000
+### 7. The Heights at Bear Creek Apartments
+- **Address:** 17771 NE 90th St, Redmond, WA
+- **Price:** $2,730+
 - **Bedrooms:** 2
-- **Bathrooms:** 1
-- **Image:** ![Image](https://photos.zillowstatic.com/fp/13ebe34a7dc98f8c619e6665e099be0e-p_e.jpg)
 - **Listing Status:** For Rent
-- **Details:** [View Listing](https://www.zillow.com/apartments/san-francisco-ca/presidio-washington-apartments/5Z93Vm/)
+- **Image:** ![The Heights at Bear Creek Apartments](https://photos.zillowstatic.com/fp/cbb6d0d245f94dda309653df8bdf880e-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/the-heights-at-bear-creek-apartments/5XjRbT/)
+
+### 8. Vue 22 Apartments
+- **Address:** 2170 NE Bel Red Rd, Bellevue, WA
+- **Price:** $2,798+
+- **Bedrooms:** 2
+- **Listing Status:** For Rent
+- **Image:** ![Vue 22 Apartments](https://photos.zillowstatic.com/fp/538515a611e8ab605cab058ed4a390d8-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/bellevue-wa/vue-22-apartments/Cgr2BC/)
+
+### 9. Redmond Hill
+- **Address:** 6110 186th Pl NE, Redmond, WA
+- **Price:** $2,058+
+- **Bedrooms:** 2
+- **Listing Status:** For Rent
+- **Image:** ![Redmond Hill](https://photos.zillowstatic.com/fp/da007e12af2b1338d9b0c788f9ee8d96-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/redmond-hill/5XkHCN/)
+
+### 10. Elevation
+- **Address:** 17202 NE 85th Pl, Redmond, WA
+- **Price:** $2,183+
+- **Bedrooms:** 2
+- **Listing Status:** For Rent
+- **Image:** ![Elevation](https://photos.zillowstatic.com/fp/2185f20ac278ba2f4342ba48b9d3419e-p_e.jpg)
+- **Details:** [View Listing](https://www.zillow.com/apartments/redmond-wa/elevation/5XtQ6w/)
 
 ## Conclusion
-The rental market in San Francisco offers a variety of options for those seeking 2-bedroom apartments under $3000. The properties listed above represent a snapshot of the current offerings, showcasing a range of prices, locations, and amenities.
+
+The rental market in Redmond, WA offers a variety of two-bedroom apartments with prices ranging from approximately $2,034 to $3,701. Each property has unique features and amenities, making it essential for potential renters to consider their preferences and budget when searching for a new home.
