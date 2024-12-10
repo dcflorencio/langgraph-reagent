@@ -27,4 +27,4 @@ Langgraph-Reagent is a state-of-the-art real estate search assistant that levera
 
 ## Report
 
-![Workflow](https://github.com/dcflorencio/langgraph-reagent/blob/main/static/report.png)
+![Workflow](https://github.com/dcflorencio/langgraph-reagent/blob/main/static/report.PNG)
