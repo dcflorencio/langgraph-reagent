@@ -21,7 +21,7 @@ Langgraph-Reagent is a state-of-the-art real estate search assistant that levera
 
 1. **Requirements Gathering**: The assistant collects user preferences, such as location, budget, property type, and more.
 2. **API Call Construction**: Based on the gathered requirements, the system builds and executes a query to the Zillow API.
-3. **Property Recommendations**: Results from the API are processed and presented to the user in an engaging chat format.
+3. **Property Recommendations**: Results from the API are processed and presented to the user in an engaging chat format and a markdown report.
 
 ---
 
