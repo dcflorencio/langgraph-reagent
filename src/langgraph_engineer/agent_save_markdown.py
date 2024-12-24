@@ -61,5 +61,5 @@ workflow.add_edge("api_call_builder", "Api Call")
 workflow.add_edge("Api Call", "report_writer")
 workflow.add_edge("report_writer", "report_saver")
 workflow.add_edge("report_saver", END)
-workflow.add_edge("report_writer", END)
+
 graph = workflow.compile()
